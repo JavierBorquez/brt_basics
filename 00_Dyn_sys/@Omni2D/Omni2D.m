@@ -1,4 +1,4 @@
-classdef Drone2D < DynSys
+classdef Omni2D < DynSys
   properties
     % Angle bounds
     angleRange
@@ -13,7 +13,7 @@ classdef Drone2D < DynSys
   end
   
   methods
-    function obj = Drone2D(x, angleRange, speed, dRange, dims)
+    function obj = Omni2D(x, angleRange, speed, dRange, dims)
       % obj = Drone2D(x, wMax, speed, dMax, dims)
       %
       % Dynamics:

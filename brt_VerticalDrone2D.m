@@ -3,7 +3,7 @@ clear
 %% Grid
 grid_min = [-4; -1]; % Lower corner of computation domain
 grid_max = [4; 4];    % Upper corner of computation domain
-N = [31; 31];         % Number of grid points per dimension
+N = [101; 101];         % Number of grid points per dimension
 %pdDims = 3;               % -- dimension is periodic
 g = createGrid(grid_min, grid_max,N);
 
@@ -24,7 +24,7 @@ tau = t0:dt:tMax;
 x0=[0 0];
 % input bounds
 grav= 9.8;
-k = 12;
+k = 20;
 uRange= 1;
 
 % control trying to min or max value function?
